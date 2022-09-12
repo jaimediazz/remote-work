@@ -17,11 +17,6 @@ p {
     margin-bottom: 60px;
 }
 
-span {
-    font-family: "Epilogue", sans-serif;
-    font-weight: 500;    
-}
-
 button {
     font-family: "Epilogue", sans-serif;
     font-weight: 700;
@@ -33,48 +28,6 @@ button {
 }
 
 /* LAYOUT */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 2em 1em;
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-}
-
-.nav-list-item {
-    margin-right: 5em;
-}
-
-nav a {
-    font-family: "Epilogue", sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: hsl(0, 0%, 41%);
-}
-
-.nav-dropdown a {
-    margin-right: .5em;
-    position: relative;
-}
-
-/* .nav-item-border {
-    border: 1px solid hsl(0, 0%, 41%);
-    border-radius: 10px;
-    padding: 1em;
-} */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: hsl(0, 0%, 98%);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 1em 1em;
-    border-radius: 10px;
-    cursor: pointer;    
-}
 
 .main {
     display: flex;
@@ -94,16 +47,6 @@ nav a {
 
 /* EVENTS */
 
-.nav-list a:hover {
-    color: hsl(0, 0%, 8%);
-    font-weight: bold;
-}
-
-.nav-dropdown:hover .dropdown-content {
-    display: flex;
-    flex-direction: column;
-}
-
 button:hover {
     background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 8%);
@@ -119,5 +62,10 @@ button:hover {
 
     .col-4 {
         width: 100%;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
     }
 }
