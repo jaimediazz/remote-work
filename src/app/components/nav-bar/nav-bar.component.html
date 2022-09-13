@@ -45,4 +45,17 @@
             <li class="nav-list-item nav-item-border"><a href="#">Register</a></li>
         </ul>
     </nav>
+    
+    <!-- RESPONSIVE MENU -->
+    <div class="hamburger">
+        <button (click)="toggleMenu()">
+            <img src="../../../assets/icon-menu.svg" alt="hamburger">
+        </button>
+    </div>
+
+    <app-responsive-menu 
+        *ngIf="showMenu" 
+        class="menuResponsive"
+        [showMenu]="showMenu"
+        (closeMenuEvent)="toggleMenu()"></app-responsive-menu>
 </div>

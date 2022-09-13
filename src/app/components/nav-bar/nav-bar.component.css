@@ -2,9 +2,18 @@
     width: 100%;
 }
 
+.hamburger {
+    display: none;
+}
+
 span {
     font-family: "Epilogue", sans-serif;
     font-weight: 500;    
+}
+
+button {
+    background-color: transparent;
+    border: none;
 }
 
 /* LAYOUT */
@@ -52,6 +61,13 @@ nav a {
     cursor: pointer;    
 }
 
+.menuResponsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
 .col-2 {
     width: 20%;
 }
@@ -79,7 +95,11 @@ nav a {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1120px) {
-    .nav {
-        flex-direction: column;
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
     }
 }
