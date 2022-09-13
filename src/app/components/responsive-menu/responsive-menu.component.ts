@@ -6,6 +6,9 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./responsive-menu.component.css']
 })
 export class ResponsiveMenuComponent {
+  showFeatures: boolean = false;
+  showCompanyInfo: boolean = false;
+  
   @Input() showMenu: boolean = false;
 
   @Output() closeMenuEvent = new EventEmitter();
@@ -13,4 +16,5 @@ export class ResponsiveMenuComponent {
   closeMenu() {
     this.closeMenuEvent.emit();
   }
+
 }

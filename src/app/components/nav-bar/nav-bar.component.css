@@ -61,6 +61,10 @@ nav a {
     cursor: pointer;    
 }
 
+.dropdown-content > * {
+    margin-top: 1em;
+}
+
 .menuResponsive {
     position: fixed;
     top: 0;

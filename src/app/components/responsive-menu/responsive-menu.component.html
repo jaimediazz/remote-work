@@ -5,12 +5,35 @@
     <nav class="nav-left">
         <ul class="nav-list">
             <li class="nav-list-item nav-dropdown">
-                <a href="#">Features</a>
-                <img src="../../../assets/icon-arrow-down.svg" alt="arrow down">
+                <a href="#" (click)="showFeatures = !showFeatures">Features</a>
+                <img src="../../../assets/icon-arrow-down.svg" alt="arrow down" (click)="showFeatures = !showFeatures">
+                <div *ngIf="showFeatures" class="dropdown-content">
+                    <div>
+                        <img src="../../../assets/icon-todo.svg" alt="toDo">
+                        <span> Todo List</span>
+                    </div>
+                    <div>
+                        <img src="../../../assets/icon-calendar.svg" alt="calendar">
+                        <span> Calendar</span>
+                    </div>
+                    <div>
+                        <img src="../../../assets/icon-reminders.svg" alt="reminders">
+                        <span> Reminders</span>
+                    </div>
+                    <div>
+                        <img src="../../../assets/icon-planning.svg" alt="planning">
+                        <span> Planning</span>
+                    </div>
+                </div>                
             </li>
             <li class="nav-list-item nav-dropdown">
-                <a href="#">Company</a>
-                <img src="../../../assets/icon-arrow-down.svg" alt="arrow down">                       
+                <a href="#" (click)="showCompanyInfo = !showCompanyInfo">Company</a>
+                <img src="../../../assets/icon-arrow-down.svg" alt="arrow down" (click)="showCompanyInfo = !showCompanyInfo">
+                <div *ngIf="showCompanyInfo" class="dropdown-content">
+                    <span>History</span>
+                    <span>Our team</span>
+                    <span>Blog</span>
+                </div>                       
             </li>
             <li class="nav-list-item"><a href="#">Carrers</a></li>
             <li class="nav-list-item"><a href="#">About</a></li>
