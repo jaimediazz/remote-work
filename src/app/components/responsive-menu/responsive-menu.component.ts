@@ -12,6 +12,5 @@ export class ResponsiveMenuComponent {
 
   closeMenu() {
     this.closeMenuEvent.emit();
-    console.log("SDFsdfsdfsdfsfas");
   }
 }
