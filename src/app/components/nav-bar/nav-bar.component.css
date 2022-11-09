@@ -45,6 +45,10 @@ nav a {
     position: relative;
 }
 
+.nav-dropdown img {
+    transition: transform .2s;
+}
+
 /* .nav-item-border {
     border: 1px solid hsl(0, 0%, 41%);
     border-radius: 10px;
@@ -93,6 +97,10 @@ nav a {
 .nav-list a:hover {
     color: hsl(0, 0%, 8%);
     font-weight: bold;
+}
+
+.nav-dropdown:hover img {
+    transform: rotate(180deg);
 }
 
 .nav-dropdown:hover .dropdown-content {
